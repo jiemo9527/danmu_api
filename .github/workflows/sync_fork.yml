@@ -18,7 +18,7 @@ jobs:
             - name: Checkout target repo
               uses: actions/checkout@v5
               with:
-                token: ${{ secrets.GITHUB_TOKEN }}
+                token: ${{ secrets.FORK_SYNC_TOKEN }}
 
             - name: Sync Upstream
               uses: aormsby/Fork-Sync-With-Upstream-action@v3.4.3
